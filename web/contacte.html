@@ -19,11 +19,11 @@
     <nav>
         <ul>
             <li><a href="../index.html">Inici</a></li>
-            <li><a href="./web/general.html">general</a></li>
-            <li><a href="./web/fotos.html">Fotos</a></li>
-            <li><a href="./web/videos.html">Videos</a></li>
-            <li><a href="./web/agenda.html">Agenda</a></li>
-            <li><a href="./web/contacte.html">Contacte</a></li>
+            <li><a href="./general.html">general</a></li>
+            <li><a href="./fotos.html">Fotos</a></li>
+            <li><a href="./videos.html">Videos</a></li>
+            <li><a href="./agenda.html">Agenda</a></li>
+            <li><a href="./contacte.html">Contacte</a></li>
         </ul>
     </nav>
     <main>
@@ -37,6 +37,23 @@
                 height="500"></iframe></div>
         <h2>Correo Electronico</h2>
         <a href="mailto:francisco.rusg@educem.net">Correo de un humilde Whovian</a><br>
+        <form action="./login.php" method="POST">
+            <p>
+                <label for="user"><b>Usuario</b></label>
+                <input id="user" type="text" placeholder="Introduce tu usuario" name="uname" required>
+            </p>
+            <p>
+                <label for="pwd"><b>Contraseña</b></label>
+                <input id="pwd" type="password" placeholder="Introduce tu contraseña" name="password" required>
+            </p>
+            <p><label for="email"><b>Email</b></label><input type="email" id="idEmail" name="correo"
+                    placeholder="Introduce tu correo electrónico"></p>
+
+            <textarea name=observaciones rows="10" cols="100">
+
+                  </textarea>
+            <p><input value="Envíar" type="submit"></p>
+        </form>
         <h2>Localización del Club de Fans</h2>
         <iframe
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d550.7043721171962!2d2.2894062055554025!3d41.608672002722244!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12a4c7cefa8ab433%3A0xebbe7a4d6a77850e!2sEducem%20Centres%20d&#39;Ensenyament!5e0!3m2!1sca!2ses!4v1633258319764!5m2!1sca!2ses"
