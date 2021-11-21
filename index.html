@@ -1,49 +1,117 @@
 <!DOCTYPE html>
 <html lang="es">
-
-<head>
-    <meta charset="utf-8">
-    <meta name="author" content="Francisco Rus">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="author" content="Francisco Rus" />
     <title>Doctor Who</title>
-    <meta name="description" content="Web dedicada a la serie Doctor Who">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="icon" href="./img/favicon.ico">
-    <meta name="keywords" content="Doctor Who, Tardis, BBC, Doctor">
-</head>
+    <meta name="description" content="Web dedicada a la serie Doctor Who" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" href="./css/common.css" />
+    <link rel="stylesheet" type="text/css" href="./css/index.css" />
+    <link rel="icon" href="./img/favicon.ico" />
+    <meta name="keywords" content="Doctor Who, Tardis, BBC, Doctor" />
+  </head>
 
-<body>
+  <body>
     <header>
-        <h1>Pagina dedicada a Doctor Who</h1>
-        <img src="./img/logo.webp" width="200" height="200" alt="logo de doctor who">
+      <h1 class="titulo">Pagina dedicada a Doctor Who</h1>
+      <img class="logo"
+        src="./img/logo.webp"
+        width="200"
+        height="200"
+        alt="logo de doctor who"
+      />
     </header>
-    <nav>
-        <!--MENÚ DE NAVEGACIÓ (Inici / General / Fotos / Vídeos / Agenda / Contacte )-->
-        <ul>
-            <li><a href="./index.html">Inici</a></li>
-            <li><a href="./web/general.html">general</a></li>
-            <li><a href="./web/fotos.html">Fotos</a></li>
-            <li><a href="./web/videos.html">Videos</a></li>
-            <li><a href="./web/agenda.html">Agenda</a></li>
-            <li><a href="./web/contacte.html">Contacte</a></li>
-        </ul>
-    </nav>
+    <!--MENÚ DE NAVEGACIÓ (Inici / General / Fotos / Vídeos / Agenda / Contacte )-->
+    <div class="menu">
+      <div class="label">Menu</div>
+      <div class="spacer"></div>
+      <div class="item">
+        <span><a href="./index.html">Inici</a> </span>
+      </div>
+      <div class="item">
+        <span><a href="./web/general.html">General</a></span>
+      </div>
+      <div class="item">
+        <span><a href="./web/fotos.html">Fotos</a></span>
+      </div>
+      <div class="item">
+        <span><a href="./web/videos.html">Videos</a></span>
+      </div>
+      <div class="item">
+        <span><a href="./web/agenda.html">Agenda</a></span>
+      </div>
+      <div class="item">
+        <span><a href="./web/contacte.html">Contacte</a></span>
+      </div>
+    </div>
+
     <main>
-        <div>
-            <img src="./img/doctor-who-todos.webp" width="600" height="600" alt="imagen de doctor who">
-        </div>
-        <aside>
-            <iframe
-                src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FDoctorWho&tabs=timeline&width=600&height=378&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=false&appId"
-                width="600" height="350"
-                allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
-        </aside>
+      <div>
+        <img class="matt" src="./img/index.webp"
+          width="400"
+          height="400"
+          alt="imagen de doctor who"
+        />
+      </div>
+      <section id="lastNews" class="blog">
+        <h1 id="news">Ultimas Noticias</h1>
+        <article id="articulo1">
+          <h2>
+            Russell T. Davies vuelve como guionista a ‘Doctor Who’ trece años
+            después de su marcha
+          </h2>
+          <p>
+            Doctor Who llevaba sin emitirse 16 años cuando Russell T. Davies se
+            hizo con las riendas en 2005, introduciendo a Christopher Eccleston
+            y David Tennant como nuevos doctores. Fue gracias a Davies, por
+            ello, que la ficción pudo modernizarse y reforzarse como el fenómeno
+            cultural que sigue siendo hoy, sin que perdiera el impacto mediático
+            con el cambio de actores protagonistas y de showrunners. Luego de
+            que la etapa de Davies diera pie además a un par de spin-offs (The
+            Sarah Jane Adventures y Torchwood), este fue sustituido por Steven
+            Moffat en 2009, que a su vez le daría el relevo a Chris Chibnall
+            coincidiendo con el fichaje de Jodie Whittaker como nueva
+            protagonista. Recientemente supimos que estos dos últimos
+            abandonarían Doctor Who a lo largo de 2022.
+          </p>
+        </article>
+        <article id="articulo2">
+          <h2>
+            Mas sobre el Regreso de Russell T. Davies vuelve como guionista a
+            ‘Doctor Who’
+          </h2>
+          <p>
+            Aunque nadie ha especificado cuánto durará este retorno: si se
+            reducirá a unos cuantos especiales a cuenta del aniversario, o se
+            hará cargo de toda una nueva etapa estilo lo que ya hizo él mismo en
+            2005. El propio Davies no ha sido muy revelador a este respecto,
+            prefiriendo mostrarse prudente: “Estoy más que emocionado de volver
+            a mi serie favorita, pero estamos viajando en el tiempo demasiado
+            rápido: hay toda una serie del brillante Doctor de Jodie Whittaker
+            para disfrutar con mi amigo y héroe Chris Chibnall: por ahora sigo
+            siendo un espectador”. Está en manos de Davies, ahora, buscar un
+            sustituto para Whittaker que pueda incorporarse a la franquicia a
+            partir de 2023.
+          </p>
+        </article>
+      </section>
     </main>
     <footer>
-        <a href="https://twitter.com/bbcdoctorwho?lang=ca" target="_blank">Twitter</a>
-        <a href="https://www.reddit.com/r/doctorwho/" target="_blank">Reddit</a>
-        <a href="https://ca-es.facebook.com/DoctorWho/" target="_blank">Facebook</a>
-        &copy;2021-22 By fran rus
+        <div class="menu">
+            <div class="label">Redes Sociales</div>
+            <div class="spacer"></div>
+            <div class="item">
+                <span><a href="https://twitter.com/bbcdoctorwho?lang=ca" target="_blank">Twitter</a></span>
+            </div>
+            <div class="item">               
+                <span><a href="https://www.reddit.com/r/doctorwho/" target="_blank">Reddit</a></span>
+            </div>
+            <div class="item">
+                <span><a href="https://ca-es.facebook.com/DoctorWho/" target="_blank">Facebook</a></span>
+            </div>
+        </div>
+      <div><p class="copy">&copy;2021-22 By fran rus</p></div>
     </footer>
-</body>
-
+  </body>
 </html>

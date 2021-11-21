@@ -1,70 +1,154 @@
 <!DOCTYPE html>
 <html lang="es">
-
-<head>
-    <meta charset="utf-8">
-    <meta name="author" content="Francisco Rus">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="author" content="Francisco Rus" />
     <title>Doctor Who</title>
-    <meta name="description" content="Web dedicada a la serie Doctor Who">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="icon" href="../img/favicon.ico" type="image/vnd.microsoft.icon">
-    <meta name="keywords" content="Doctor Who, Tardis, BBC, Doctor">
-</head>
+    <meta name="description" content="Web dedicada a la serie Doctor Who" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" href="../css/common.css" />
+    <link rel="stylesheet" type="text/css" href="../css/contacte.css" />
+    <link
+      rel="icon"
+      href="../img/favicon.ico"
+      type="image/vnd.microsoft.icon"
+    />
+    <meta name="keywords" content="Doctor Who, Tardis, BBC, Doctor" />
+  </head>
 
-<body>
+  <body>
     <header>
-        <h1>Pagina dedicada a Doctor Who</h1>
-        <img src="../img/logo.webp" width="200" height="200" alt="logo de doctor who">
+      <h1 class="titulo">Pagina dedicada a Doctor Who</h1>
+      <img
+        class="logo"
+        src="../img/logo.webp"
+        width="200"
+        height="200"
+        alt="logo de doctor who"
+      />
     </header>
-    <nav>
-        <ul>
-            <li><a href="../index.html">Inici</a></li>
-            <li><a href="./general.html">general</a></li>
-            <li><a href="./fotos.html">Fotos</a></li>
-            <li><a href="./videos.html">Videos</a></li>
-            <li><a href="./agenda.html">Agenda</a></li>
-            <li><a href="./contacte.html">Contacte</a></li>
-        </ul>
-    </nav>
+    <!--MENÚ DE NAVEGACIÓ (Inici / General / Fotos / Vídeos / Agenda / Contacte )-->
+    <div class="menu">
+      <div class="label">Menu</div>
+      <div class="spacer"></div>
+      <div class="item">
+        <span><a href="../index.html">Inici</a> </span>
+      </div>
+      <div class="item">
+        <span><a href="./general.html">General</a></span>
+      </div>
+      <div class="item">
+        <span><a href="./fotos.html">Fotos</a></span>
+      </div>
+      <div class="item">
+        <span><a href="./videos.html">Videos</a></span>
+      </div>
+      <div class="item">
+        <span><a href="./agenda.html">Agenda</a></span>
+      </div>
+      <div class="item">
+        <span><a href="./contacte.html">Contacte</a></span>
+      </div>
+    </div>
     <main>
-        <h1>Información de Contacto</h1>
-        <h2>Envíanos un
-            mensaje de WhatsApp</h2>
-        <div><a href="https://api.whatsapp.com/send?phone=34669304298&text=Hola, Nececito mas informacion! "
-                target="_blank">Unete a nuestro club</a></div>
-        <h2>Discord</h2>
-        <div><iframe src="https://discord.com/widget?id=894178014064156712&theme=dark" width="350"
-                height="500"></iframe></div>
-        <h2>Correo Electronico</h2>
-        <a href="mailto:francisco.rusg@educem.net">Correo de un humilde Whovian</a><br>
-        <form action="./login.php" method="POST">
-            <p>
-                <label for="user"><b>Usuario</b></label>
-                <input id="user" type="text" placeholder="Introduce tu usuario" name="uname" required>
-            </p>
-            <p>
-                <label for="pwd"><b>Contraseña</b></label>
-                <input id="pwd" type="password" placeholder="Introduce tu contraseña" name="password" required>
-            </p>
-            <p><label for="email"><b>Email</b></label><input type="email" id="idEmail" name="correo"
-                    placeholder="Introduce tu correo electrónico"></p>
-
-            <textarea name=observaciones rows="10" cols="100">
-
-                  </textarea>
-            <p><input value="Envíar" type="submit"></p>
-        </form>
-        <h2>Localización del Club de Fans</h2>
+      <h1>Información de Contacto</h1>
+      <h2>Envíanos un mensaje de WhatsApp</h2>
+      <div>
+        <a
+          id="what"
+          href="https://api.whatsapp.com/send?phone=34669304298&text=Hola, Nececito mas informacion! "
+          target="_blank"
+          >Unete a nuestro club</a
+        >
+      </div>
+      <div class="discord">
+      <h2 id="cabdiscord">Discord</h2>
         <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d550.7043721171962!2d2.2894062055554025!3d41.608672002722244!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12a4c7cefa8ab433%3A0xebbe7a4d6a77850e!2sEducem%20Centres%20d&#39;Ensenyament!5e0!3m2!1sca!2ses!4v1633258319764!5m2!1sca!2ses"
-            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+          id="discord"
+          src="https://discord.com/widget?id=894178014064156712&theme=dark"
+          width="350"
+          height="500"
+        ></iframe>
+      </div>
+      <h2>Correo Electronico</h2>
+      <a id="correo" href="mailto:francisco.rusg@educem.net"
+        >Correo de un humilde Whovian</a
+      ><br />
+      <form action="./login.php" method="POST">
+        <p>
+          <label for="user"><b id="tuser">Usuario</b></label>
+          <input
+            id="user"
+            type="text"
+            placeholder="Introduce tu usuario"
+            name="uname"
+            required
+          />
+        </p>
+        <p>
+          <label for="pwd"><b id="tpwd">Contraseña</b></label>
+          <input
+            id="pwd"
+            type="password"
+            placeholder="Introduce tu contraseña"
+            name="password"
+            required
+          />
+        </p>
+        <p>
+          <label for="email"><b id="temail">Email</b></label
+          ><input
+            type="email"
+            id="idEmail"
+            name="correo"
+            placeholder="Introduce tu correo electrónico"
+          />
+        </p>
+        <textarea id="mensaje" name="observaciones" rows="8" cols="40"> </textarea>
+        <p>
+          <label for="enviar"
+            ><input id="enviar" value="Envíar" type="submit"
+          /></label>
+        </p>
+      </form>
+      <h2 id="cabmapa">Localización del Club de Fans</h2>
+      <iframe
+        id="mapa"
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d550.7043721171962!2d2.2894062055554025!3d41.608672002722244!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12a4c7cefa8ab433%3A0xebbe7a4d6a77850e!2sEducem%20Centres%20d&#39;Ensenyament!5e0!3m2!1sca!2ses!4v1633258319764!5m2!1sca!2ses"
+        width="1250"
+        height="450"
+        style="border: 0"
+        allowfullscreen=""
+        loading="lazy"
+      ></iframe>
     </main>
     <footer>
-        <a href="https://twitter.com/bbcdoctorwho?lang=ca" target="_blank">Twitter</a>
-        <a href="https://www.reddit.com/r/doctorwho/" target="_blank">Reddit</a>
-        <a href="https://ca-es.facebook.com/DoctorWho/" target="_blank">Facebook</a>
-        &copy;2021-22 By fran rus
+      <div class="menu">
+        <div class="label">Redes Sociales</div>
+        <div class="spacer"></div>
+        <div class="item">
+          <span
+            ><a href="https://twitter.com/bbcdoctorwho?lang=ca" target="_blank"
+              >Twitter</a
+            ></span
+          >
+        </div>
+        <div class="item">
+          <span
+            ><a href="https://www.reddit.com/r/doctorwho/" target="_blank"
+              >Reddit</a
+            ></span
+          >
+        </div>
+        <div class="item">
+          <span
+            ><a href="https://ca-es.facebook.com/DoctorWho/" target="_blank"
+              >Facebook</a
+            ></span
+          >
+        </div>
+      </div>
+      <div><p class="copy">&copy;2021-22 By fran rus</p></div>
     </footer>
-</body>
-
+  </body>
 </html>

@@ -1,0 +1,70 @@
+body {
+  background-image: url(../img/fondo-dalek.webp);
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+article {
+  text-align: justify;
+  color: rgb(163, 179, 233);
+}
+
+h1 {
+  color: rgb(199, 204, 219);
+}
+
+h2 {
+  color: rgb(199, 204, 219);
+}
+
+h3 {
+  color: rgb(199, 204, 219);
+}
+
+.cabezera {
+  font-size: 25px;
+}
+
+#dalek-p {
+  width: 80%;
+  margin: 10px auto;
+  color: rgb(163, 179, 233);
+  padding: 10px;
+  text-align: justify;
+  line-height: 22px;
+}
+
+img.dalek{
+  float: left;
+  padding: 15px;
+}
+
+img.davros{
+  float: right;
+  padding: 15px;
+}
+
+img.master{
+  float: left;
+  padding: 15px;
+}
+
+#peligros {
+  margin-left: 500px;
+  margin-bottom: 5px;
+}
+
+#cabdavros {
+  margin-left: 1250px;
+  margin-bottom: 5px;
+}
+
+#cabamo {
+  margin-left: 150px;
+  margin-bottom: 5px;
+}
+
+#cabdalek {
+  margin-left: 150px;
+  margin-bottom: 5px;
+}

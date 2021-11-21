@@ -1,78 +1,201 @@
 <!DOCTYPE html>
 <html lang="es">
-
-<head>
-    <meta charset="utf-8">
-    <meta name="author" content="Francisco Rus">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="author" content="Francisco Rus" />
     <title>Doctor Who</title>
-    <meta name="description" content="Web dedicada a la serie Doctor Who">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="icon" href="../img/favicon.ico" type="image/vnd.microsoft.icon">
-    <meta name="keywords" content="Doctor Who, Tardis, BBC, Doctor">
-</head>
+    <meta name="description" content="Web dedicada a la serie Doctor Who" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" href="../css/common.css" />
+    <link rel="stylesheet" type="text/css" href="../css/general.css" />
+    <link
+      rel="icon"
+      href="../img/favicon.ico"
+      type="image/vnd.microsoft.icon"
+    />
+    <meta name="keywords" content="Doctor Who, Tardis, BBC, Doctor" />
+  </head>
 
-<body>
+  <body>
     <header>
-        <h1>Pagina dedicada a Doctor Who</h1>
-        <img src="../img/logo.webp" width="200" height="200" alt="logo de doctor who">
+      <h1 class="titulo">Pagina dedicada a Doctor Who</h1>
+      <img
+        class="logo"
+        src="../img/logo.webp"
+        width="200"
+        height="200"
+        alt="logo de doctor who"
+      />
     </header>
-    <nav>
-        <!--MENÚ DE NAVEGACIÓ (Inici / General / Fotos / Vídeos / Agenda / Contacte )-->
-        <ul>
-            <li><a href="../index.html">Inici</a></li>
-            <li><a href="./general.html">general</a></li>
-            <li><a href="./fotos.html">Fotos</a></li>
-            <li><a href="./videos.html">Videos</a></li>
-            <li><a href="./agenda.html">Agenda</a></li>
-            <li><a href="./contacte.html">Contacte</a></li>
-        </ul>
-    </nav>
+    <!--MENÚ DE NAVEGACIÓ (Inici / General / Fotos / Vídeos / Agenda / Contacte )-->
+    <div class="menu">
+      <div class="label">Menu</div>
+      <div class="spacer"></div>
+      <div class="item">
+        <span><a href="../index.html">Inici</a> </span>
+      </div>
+      <div class="item">
+        <span><a href="./general.html">General</a></span>
+      </div>
+      <div class="item">
+        <span><a href="./fotos.html">Fotos</a></span>
+      </div>
+      <div class="item">
+        <span><a href="./videos.html">Videos</a></span>
+      </div>
+      <div class="item">
+        <span><a href="./agenda.html">Agenda</a></span>
+      </div>
+      <div class="item">
+        <span><a href="./contacte.html">Contacte</a></span>
+      </div>
+    </div>
     <article>
-        <section>
-            <h1>Quien es el doctor?</h1>
-            <p>
-                El Doctor, es un viajero del tiempo y el espacio que puede regenerarse antes de morir y cambiar su
-                físico y
-                personalidad, aunque conservando su historia y recuerdos.</p>
-            <h1>Por donde comienzo?</h1>
-            <p>Cualquier resurrecion del doctor es buena para engancharse a la serie, pero siempre recomiendo empezar
-                por la
-                primera temporada, asi disfrutaras mas.</p>
-            <h1>A que peligros se enfrenta el doctor??</h1>
-            <h2>Esta es una muestra de los villanos a los que se enfrenta</h2>
-            <h3>Los Dalek</h3>
-            <div>
-                <img src="../img/daleks.webp" width="400" height="400" alt="imagen de Daleks">
-            </div>
-            <p>Posiblemente los villanos más memorables de toda la historia del show, estos fanáticos del exterminio no
-                son
-                realmente los más temibles, pero de todos modos tienen
-                un potencial peligrosísimo. </p>
-            <h3>Davros</h3>
-            <div>
-                <img src="../img/davros.webp" width="400" height="400" alt="imagen de Davros">
-            </div>
-            <p>El creador de los Dalek tiene motivaciones verdaderamente aterradoras, casi al punto de reflejar un
-                sadismo y
-                manipulación similar al de los Nazis, aunque recientemente se reveló que el Doctor tuvo algo que ver con
-                eso. </p>
-            <h3>El amo</h3>
-            <div>
-                <img src="../img/The_Master.webp" width="400" height="400" alt="imagen de The Master">
-            </div>
-            <p>Hablando de seres individuales, no podemos olvidar al otro gran Time Lord, convertido en un personaje
-                icónico
-                por Roger Delgado, y que actualmente habita un cuerpo femenino: la sorprendente Missy (Michelle Gomez).
-                El
-                rival eterno de nuestro Doctor. </p>
-        </section>
+      <section>
+        <h1 class="cabezera">Quien es el doctor?</h1>
+        <p>
+          "El Doctor" es un Señor del Tiempo expulsado de Gallifrey que viajaba
+          a través del espacio y el tiempo con varios compañeros, generalmente
+          humanos, en una TARDIS obsoleta Tipo 40. Aunque en gran parte era
+          pacifista en cuanto a la resolución de conflictos, a veces podía ser
+          un buen soldado. De hecho, algunas civilizaciones del universo
+          tradujeron la palabra doctor como guerrero, mientras que otras lo
+          veían como un benefactor compasivo, digno de admiración y piedad. A
+          pesar de sus numerosas buenas obras, fue indiscutiblemente responsable
+          de miles de millones de muertes debido a la última Gran Guerra del
+          Tiempo. Aunque la mayoría de los Daleks murieron en el fuego cruzado,
+          Gallifrey logró sobrevivir, en lugar de arder gracias a los esfuerzos
+          de "las trece" encarnaciones del Doctor, de los cuales los primeros
+          once perdieron la memoria de lo sucedido. Por sus acciones, los
+          Señores del Tiempo le concedieron un nuevo ciclo de regeneraciones, lo
+          que le permitió vivir después de agotar todas las regeneraciones
+          disponibles en su primer ciclo.
+        </p>
+        <h1 class="cabezera">Por donde comienzo?</h1>
+        <p>
+          Muchos consideran que la serie moderna es un mejor punto de inicio
+          para ver la serie, particularmente por el dinamismo de las historias,
+          lo cual sin duda atrae bastante. Cabe resaltar que incluso si se
+          empieza por la serie moderna, es posible ver la clásica después, dado
+          que el formato del programa es bastante abierto en ese sentido. Para
+          intentar que esta guía sea lo más completa posible, mencionaremos cómo
+          ver tanto la serie moderna como la clásica.
+        </p>
+        <h1 class="cabezera" id="peligros">A que peligros se enfrenta el doctor??</h1>
+        <h3 class="cabezera" id="cabdalek">Los Dalek</h3>
+        <div>
+          <img
+            class="dalek"
+            id="daleks"
+            src="../img/daleks.webp"
+            width="400"
+            height="400"
+            alt="imagen de Daleks"
+          />
+        </div>
+        <p id="dalek-p">
+          Los Daleks son unas criaturas provenientes del planeta Skaro.
+          Antiguamente, en Skaro, existían dos razas, los Kaleds y los Thals,
+          siempre en continua lucha unos contra otros. El uso de su poder
+          nuclear hizo que Skaro fuera prácticamente inhabitable, y rápidamente,
+          los Kaleds empezaron a mutar. Temiendo el fin de su raza, los Kaleds
+          pusieron todas sus esperanzas en su líder, el malvado científico
+          Davros, que creó unos seres a los que encerró en máquinas que les
+          suministraban todo lo que necesitaban, como pequeños tanques, armados,
+          y a los que eliminó todo sentimiento, a excepción de uno solo: el
+          odio. Y así nacieron los Daleks. Claro está, Davros no contó con que
+          los Daleks seguían teniendo un enorme instinto de supervivencia, y
+          rápidamente se rebelaron contra él. Se autoproclamaron los seres
+          supremos del Universo, y considerándose una raza superior, decidieron
+          conquistar y exterminar a las inferiores (todas las demás). Pero
+          siempre que los Daleks intentan conquistar el universo, el Doctor está
+          ahí para impedírselo. Por ello todos los Daleks le temen, y están
+          programados para convertirlo en prioridad máxima si él aparece; hasta
+          tal punto, de llamarlo "La Tormenta que Viene".
+        </p>
+        <h3 class="cabezera" id="cabdavros">Davros</h3>
+        <div>
+          <img
+            class="davros"
+            id="davros"
+            src="../img/davros.webp"
+            width="400"
+            height="400"
+            alt="imagen de Davros"
+          />
+        </div>
+        <p>
+          Junto a su igualmente despiadado ayudante, Nyder, Davros ascendió
+          rápidamente a los niveles más altos de la Élite Científica Kaled, y
+          finalmente presidió la creación de los Daleks. Sin embargo, una
+          intervención por parte de los Señores del Tiempo inició una cadena de
+          eventos. El Cuarto Doctor fue enviado a Skaro en esos tiempos, cuando
+          Davros acababa de presentar los Daleks a la Élite Científica Kaled.
+          Davros apresó al Doctor y, utilizando un detector de mentiras, le
+          forzó a revelar los detalles de futuras derrotas por parte de los
+          Daleks, para que pudiese corregir errores en sus creaturas y así
+          prevenir esas derrotas. (El Doctor luego destruyó esta información.)
+          Davros se rehusó a escuchar al Doctor, cuando él le rogó que los
+          Daleks sean creaturas hacedoras del bien, en lugar de que se
+          conviertan en los malvados exterminadores que serían.
+        </p>
+        <h3 class="cabezera" id="cabamo">El amo</h3>
+        <div>
+          <img
+            class="master"
+            id="master"
+            src="../img/The_Master.webp"
+            width="400"
+            height="400"
+            alt="imagen de The Master"
+          />
+        </div>
+        <p>
+          El Amo nació y creció en Gallifrey, en la Casa de Oakdown. El Amo y el
+          Doctor compartieron una crianza y educación similar. Pese a que su
+          niñez fue más que nada una de trabajo, mantuvo una amistad con el
+          Primer Doctor. Los dos jóvenes solían jugar en los campos aledaños al
+          hogar del Amo, en el terreno de los padres de este. Estos campos
+          estaban cerca al Monte Perdición y estaban cubiertos de hierba roja.
+          De vez en cuando ambos escapaban del Capitol para beber con los
+          Shobogans. En una de estas excursiones clandestinas, el Amo se peleó
+          con seis Shobogans ebrios. Al igual que el resto de Señores del
+          Tiempo, el joven Amo recibió su ritual de iniciación a los ocho años.
+          Durante la ceremonia en la cual vio el Vórtice Temporal, a través del
+          Cisma Desenfrenado, se volvió loco, lo cual no era poco común, pues la
+          mayoría solía "volverse loco o huir". Esto se manifestó a lo largo de
+          su vida como el sonido de tambores incesante en la mente del Amo. Este
+          síntoma empeoró a lo largo de los años.
+        </p>
+      </section>
     </article>
     <footer>
-        <a href="https://twitter.com/bbcdoctorwho?lang=ca" target="_blank">Twitter</a>
-        <a href="https://www.reddit.com/r/doctorwho/" target="_blank">Reddit</a>
-        <a href="https://ca-es.facebook.com/DoctorWho/" target="_blank">Facebook</a>
-        &copy;2021-22 By fran rus
+      <div class="menu">
+        <div class="label">Redes Sociales</div>
+        <div class="spacer"></div>
+        <div class="item">
+          <span
+            ><a href="https://twitter.com/bbcdoctorwho?lang=ca" target="_blank"
+              >Twitter</a
+            ></span
+          >
+        </div>
+        <div class="item">
+          <span
+            ><a href="https://www.reddit.com/r/doctorwho/" target="_blank"
+              >Reddit</a
+            ></span
+          >
+        </div>
+        <div class="item">
+          <span
+            ><a href="https://ca-es.facebook.com/DoctorWho/" target="_blank"
+              >Facebook</a
+            ></span
+          >
+        </div>
+      </div>
+      <div><p class="copy">&copy;2021-22 By fran rus</p></div>
     </footer>
-</body>
-
+  </body>
 </html>

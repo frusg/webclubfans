@@ -7,37 +7,61 @@
     <title>Doctor Who</title>
     <meta name="description" content="Web dedicada a la serie Doctor Who">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="../css/common.css" />
+    <link rel="stylesheet" type="text/css" href="../css/videos.css" />
     <link rel="icon" href="../img/favicon.ico" type="image/vnd.microsoft.icon">
     <meta name="keywords" content="Doctor Who, Tardis, BBC, Doctor">
 </head>
 
 <body>
     <header>
-        <h1>Pagina dedicada a Doctor Who</h1>
-        <img src="../img/logo.webp" width="200" height="200" alt="logo de doctor who">
+        <h1 class="titulo">Pagina dedicada a Doctor Who</h1>
+        <img class="logo" src="../img/logo.webp" width="200" height="200" alt="logo de doctor who">
     </header>
-    <nav>
-    <ul>
-        <li><a href="../index.html">Inici</a></li>
-        <li><a href="./general.html">general</a></li>
-        <li><a href="./fotos.html">Fotos</a></li>
-        <li><a href="./videos.html">Videos</a></li>
-        <li><a href="./agenda.html">Agenda</a></li>
-        <li><a href="./contacte.html">Contacte</a></li>
-    </ul>
-</nav>
+    <!--MENÚ DE NAVEGACIÓ (Inici / General / Fotos / Vídeos / Agenda / Contacte )-->
+    <div class="menu">
+        <div class="label">Menu</div>
+        <div class="spacer"></div>
+        <div class="item">
+            <span><a href="../index.html">Inici</a> </span>
+        </div>
+        <div class="item">
+            <span><a href="./general.html">General</a></span>
+        </div>
+        <div class="item">
+            <span><a href="./fotos.html">Fotos</a></span>
+        </div>
+        <div class="item">
+            <span><a href="./videos.html">Videos</a></span>
+        </div>
+        <div class="item">
+            <span><a href="./agenda.html">Agenda</a></span>
+        </div>
+        <div class="item">
+            <span><a href="./contacte.html">Contacte</a></span>
+        </div>
+    </div>
     <main>
-        <div><iframe width="560" height="315" src="https://www.youtube.com/embed/NaN9JnqPK2E"
-                ></iframe></div>
-        <div><iframe src="https://player.vimeo.com/video/31370778?h=63953f03fe" width="640" height="360"></iframe>
+        <div><iframe id="youtube" width="560" height="315" src="https://www.youtube.com/embed/NaN9JnqPK2E"></iframe></div>
+        <div><iframe id="vimeo" src="https://player.vimeo.com/video/31370778?h=63953f03fe" width="640" height="360"></iframe>
             <p><a href="https://vimeo.com/31370778"></a></p>
         </div>
     </main>
     <footer>
-        <a href="https://twitter.com/bbcdoctorwho?lang=ca" target="_blank">Twitter</a>
-        <a href="https://www.reddit.com/r/doctorwho/" target="_blank">Reddit</a>
-        <a href="https://ca-es.facebook.com/DoctorWho/" target="_blank">Facebook</a>
-        &copy;2021-22 By fran rus
+        <div class="menu">
+            <div class="label">Redes Sociales</div>
+            <div class="spacer"></div>
+            <div class="item">
+                <span><a href="https://twitter.com/bbcdoctorwho?lang=ca" target="_blank">Twitter</a></span>
+            </div>
+            <div class="item">               
+                <span><a href="https://www.reddit.com/r/doctorwho/" target="_blank">Reddit</a></span>
+            </div>
+            <div class="item">
+                <span><a href="https://ca-es.facebook.com/DoctorWho/" target="_blank">Facebook</a></span>
+            </div>
+        </div>
+        <div><p class="copy">&copy;2021-22 By fran rus</p></div>
     </footer>
 </body>
 
